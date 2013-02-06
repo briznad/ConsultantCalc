@@ -44,7 +44,11 @@
 
     		$radioFields.next('.control-group').find('input[type="number"]').prop('disabled', true); // disable all rate inputs fields
 
+    		$radioFields.parent('.well').removeClass('current'); // remove "current" class from all wells
+
     		inputRate = $thisInput.attr('id'); // save the current rate input
+
+    		$(this).parent('.well').addClass('current'); // add "current" class to current input well
 
     		$thisInput.prop('disabled', false); // enable the current rate input field
 
