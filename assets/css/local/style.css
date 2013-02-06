@@ -1,0 +1,95 @@
+
+/* ==========================================================================
+   my custom styles
+   ========================================================================== */
+
+/* helper styles */
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px,1px,1px,1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.relative-container {
+    position: relative;
+}
+
+/* /helper styles */
+
+/* bootstrap overrides */
+
+.hero-unit {
+	padding: 40px;
+}
+
+.hero-unit h1 {
+	font-size: 52px;
+}
+
+legend + .control-group {
+	margin-top: 0;
+}
+
+.form-horizontal .control-label {
+	width: 50%;
+}
+
+.form-horizontal .controls {
+	margin-left: 55%;
+}
+
+/* /bootstrap overrides */
+
+/* general page styles */
+
+html {
+
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    margin-top: 2%;
+}
+
+.income-group .well {
+	text-align: center;
+}
+
+.income-group .well > input {
+	margin-bottom: 1em;
+}
+
+.income-group input[type="number"] {
+	width: 80%;
+}
+
+.income-group input[disabled] {
+	cursor: pointer;
+}
+
+.form-horizontal .well .control-group:last-child {
+	margin-bottom: 0;
+}
+
+.form-horizontal .income-group .control-label {
+	width: 48%;
+}
+
+.form-horizontal .income-group .controls {
+	margin-left: 52%;
+	text-align: left;
+}
+
+/* dev */
+
+
+
+/* /dev */
+
+/* /general page styles */
