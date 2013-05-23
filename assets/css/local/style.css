@@ -24,13 +24,18 @@
 
 /* bootstrap overrides */
 
+body {
+
+}
+
 .hero-unit {
 	padding: 35px 40px;
 	background-color: #fdfd81;
 }
 
 .hero-unit h1 {
-	font-size: 49px;
+	margin-top: 0;
+	font-size: 270%;
 }
 
 legend {
@@ -59,11 +64,19 @@ html {
 
 body {
     -webkit-font-smoothing: antialiased;
-    margin-top: 2%;
+}
+
+.container {
+	margin: 0 auto;
 }
 
 h1 {
 	font-family: 'Share Tech Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.hero-unit,
+legend {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 label {
@@ -72,6 +85,10 @@ label {
 
 .hero-unit {
 	border: 1px solid #e3e3e3;
+}
+
+.hero-unit > :last-child {
+	margin-bottom: 0;
 }
 
 .income-group .well {
@@ -120,3 +137,21 @@ label {
 /* /dev */
 
 /* /general page styles */
+
+/* responsive media queries */
+
+@media (max-width: 767px) {
+
+	.hero-unit h1 {
+		font-size: 200%;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	body {
+
+	}
+
+}

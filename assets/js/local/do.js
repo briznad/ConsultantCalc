@@ -63,6 +63,12 @@
     		tally();
     	});
 
+    	$('#devBox').text($(window).width());
+
+    	$(window).resize(function() {
+			$('#devBox').text($(window).width());
+		});
+
     });
 
     /* /when DOM is ready, bind some shit */

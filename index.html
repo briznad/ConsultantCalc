@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>ConsultantCalc</title>
         <meta name="description" content="A simple calculator to help consultants establish hourly, daily, and yearly rates.">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' type='text/css'>
         <link rel="stylesheet" href="assets/css/plugins/bootstrap.css">
@@ -19,14 +19,14 @@
 
         <div class="container">
 			<div class="row">
-				<div class="span6 offset3">
+				<div class="span6">
 					<div class="hero-unit">
 						<h1>ConsultantCalc</h1>
-						<p>A simple calculator to help consultants establish hourly, daily, and yearly rates.</p>
+						<p class="hidden-phone">A simple calculator to help consultants establish hourly, daily, and yearly rates.</p>
 					</div>
 					<div class="row">
-			        	<form class="form-horizontal">
-			        		<div class="span3">
+		        		<div class="span3">
+		        			<form class="form-horizontal">
 				        		<fieldset class="hours-per-day-group">
 								    <legend>Hours Per Day</legend>
 								    <div class="control-group">
@@ -92,12 +92,14 @@
 										</div>
 									</label>
 								</fieldset>
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div id="devBox"></div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/plugins/jquery-1.8.3.min.js"><\/script>')</script>
