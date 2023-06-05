@@ -67,12 +67,6 @@
 		$numberFields.keyup(function() {
 			tally($numberFields, inputRate);
 		});
-
-		$('#devBox').text($(window).width());
-
-		$(window).resize(function() {
-			$('#devBox').text($(window).width());
-		});
 	});
 	/* /when DOM is ready, bind some shit */
 })(jQuery || $ || {});
